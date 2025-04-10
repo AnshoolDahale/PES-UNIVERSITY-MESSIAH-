@@ -10,6 +10,7 @@ function Login() {
   const [name, setName] = useState('');
   const [confirmpassword, setconfirmpassword] = useState('');
   const [mobilenumber, setmobilenumber] = useState('');
+  const [email, setEmail] = useState('');
   const [showSignInForm, setShowSignInForm] = useState(true);
   const navigate = useNavigate();
   const location = useLocation();
@@ -34,6 +35,10 @@ function Login() {
 
   const handleMobileNumberChange = (event) => {
     setmobilenumber(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
   };
 
   const handleLogin = (event) => {
@@ -70,10 +75,8 @@ function Login() {
   };
 
   const handleSignUp = (event) => {
-    // handle sign up logic
-
     event.preventDefault();
-    const dataforregister = { name, mobilenumber, password, confirmpassword, email }
+    const dataforregister = { name, mobilenumber, password, confirmpassword, email: username }
     // Perform signup request with username, email, and password values
     axios
       .post('http://localhost:5000/register', dataforregister)
