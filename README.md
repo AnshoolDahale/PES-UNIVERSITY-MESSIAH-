@@ -1,6 +1,6 @@
 # College Portal for Student-Faculty
 
-A comprehensive web-based portal designed to facilitate seamless interaction between students and faculty members in an educational institution. This platform provides various features for managing academic activities, attendance, notes, and communication.
+A comprehensive web-based portal designed to facilitate seamless interaction between students and faculty members in an educational institution. This platform provides a very important feature to show the faculty information and status regarding availabilty on some specefic day and specefic time slot.
 
 ## Features
 
