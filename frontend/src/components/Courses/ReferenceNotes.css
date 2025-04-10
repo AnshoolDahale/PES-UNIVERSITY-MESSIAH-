@@ -1,0 +1,176 @@
+/* body {
+    background-color: #c2d8ee;
+  } */
+  .reference-form-container {
+    width: 600px;
+    min-height: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #f1f1f1;
+    color: #000000;
+    border-radius: 35px;
+  }
+  /* .reference-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  
+  .reference-form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.2);
+  }
+  
+  .reference-form-save {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .reference-form-save:hover {
+    background-color: #005fa3;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: rgba(220, 53, 69, 0.1);
+    border-radius: 8px;
+  }
+  
+  .materials-list {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .materials-list h3 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .material-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .material-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .material-icon {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+  
+  .material-info {
+    flex: 1;
+  }
+  
+  .material-info h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+  }
+  
+  .material-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .reference-form-font {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  /* .reference-form-save {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0077cc;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  } */
+  .reference-form-save {
+    border: none;
+    background-color: #0077cc;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .reference-form-save :hover {
+    background-color: #005fa3;
+  }
+  .reference-form-url
+  {
+    text-decoration: none;
+    color: #fff;
+  }
+  /* .reference-form label {
+  display: block;
+  margin-bottom: 5px;
+  } */
+  /* .reference-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  } */
+  .reference-form h2 {
+    margin-top: 0;
+  }

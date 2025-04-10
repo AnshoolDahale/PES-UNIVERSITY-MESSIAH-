@@ -1,0 +1,389 @@
+/* Add keyframes for background animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #1a237e, #4a148c, #800020, #330000, #8B0000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.faculty-info-container {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.90);
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+}
+
+.faculty-info-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.availability-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  color: #34495e;
+  font-weight: 600;
+}
+
+.form-group select,
+.form-group input {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.submit-btn {
+  background-color: #2196f3;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #0db03e;
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.availability-result {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.availability-message {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.availability-message div {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.availability-result.available {
+  background-color: #d4edda;
+  border: 2px solid #c3e6cb;
+}
+
+.availability-result.busy {
+  background-color: #f8d7da;
+  border: 2px solid #f5c6cb;
+}
+
+.availability-result.break-time {
+  background-color: #fff3cd;
+  border: 2px solid #ffeeba;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8d7da;
+  border-radius: 8px;
+  border: 2px solid #f5c6cb;
+}
+
+.loading-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin: 20px 0;
+}
+
+option.break-time {
+  background-color: #fff3cd;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .faculty-info-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .faculty-info-title {
+    font-size: 2rem;
+  }
+
+  .form-group select,
+  .form-group input,
+  .submit-btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .availability-message div {
+    font-size: 1.1rem;
+  }
+}
+
+.schedule-grid {
+  margin-top: 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule-grid h2 {
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.schedule-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f8f9fa;
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.schedule-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.2s;
+}
+
+.schedule-row:last-child {
+  border-bottom: none;
+}
+
+.schedule-row.available {
+  background-color: #d4edda;
+}
+
+.schedule-row.busy {
+  background-color: #f8d7da;
+}
+
+.schedule-row div {
+  padding: 8px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .schedule-grid {
+    margin: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .schedule-grid h2 {
+    font-size: 1.1em;
+    padding: 12px;
+  }
+  
+  .schedule-header,
+  .schedule-row {
+    padding: 8px;
+  }
+  
+  .schedule-row div {
+    padding: 6px;
+  }
+}
+
+.faculty-info-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.faculty-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.faculty-card {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-card h4 {
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.faculty-card p {
+  color: #666;
+  margin: 8px 0;
+  font-size: 1.1em;
+}
+
+.faculty-table-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.know-faculty-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.know-faculty-btn:hover {
+  background-color: #0056b3;
+}
+
+.faculty-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.faculty-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-table th,
+.faculty-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.faculty-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.faculty-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .faculty-table {
+    font-size: 0.9rem;
+  }
+  
+  .faculty-table th,
+  .faculty-table td {
+    padding: 8px;
+  }
+  
+  .know-faculty-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+.faculty-info-result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.room-info {
+  display: inline-block;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.room-info div {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .room-info {
+    padding: 15px;
+  }
+  
+  .room-info div {
+    font-size: 1rem;
+  }
+} 

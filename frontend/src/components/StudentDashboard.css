@@ -1,0 +1,49 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.user-greeting {
+  color: #f9fdfe;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-greeting .user-icon {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.faculty-info-button {
+  background: #feffff;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 30px auto;
+}
+
+.faculty-info-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: #f4f4f4;
+}
+
+.faculty-info-button i {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.faculty-info-icon {
+  width: 50px;
+  height: 50px;
+  color: white;
+} 

@@ -1,0 +1,65 @@
+.student-dashboard {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.welcome-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.student-icon {
+  font-size: 2.5rem;
+  color: #3498db;
+}
+
+.welcome-section h1 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.faculty-info-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.faculty-info-section:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+  transform: scale(1.1);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.faculty-info-section:hover .info-icon {
+  color: #3498db;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-header h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.info-content {
+  color: #666;
+  line-height: 1.6;
+} 
